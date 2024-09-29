@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualAcademy", "VisualAcademy\VisualAcademy.csproj", "{7A381F76-5ACB-4078-92B0-4AAE5CC0425C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VisualAcademy.SqlServer", "VisualAcademy.SqlServer\VisualAcademy.SqlServer.sqlproj", "{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A381F76-5ACB-4078-92B0-4AAE5CC0425C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A381F76-5ACB-4078-92B0-4AAE5CC0425C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A381F76-5ACB-4078-92B0-4AAE5CC0425C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A381F76-5ACB-4078-92B0-4AAE5CC0425C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8EEE31-AA6D-4DC9-9B78-66D0DFE0BF6A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D6E3662-9B55-4AEE-9891-1300561AB989}
+	EndGlobalSection
+EndGlobal
