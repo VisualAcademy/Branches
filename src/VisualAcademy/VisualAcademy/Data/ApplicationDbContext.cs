@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using VisualAcademy.Models;
 
 namespace VisualAcademy.Data
 {
@@ -8,6 +9,9 @@ namespace VisualAcademy.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
+
+        public DbSet<Branch> Branches { get; set; }
     }
 }

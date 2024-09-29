@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using VisualAcademy.Data;
+using VisualAcademy.Models;
+using VisualAcademy.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+// Register repository and service for DI
+builder.Services.AddScoped<IBranchRepository, BranchRepository>();
+builder.Services.AddScoped<BranchService>();
 
 var app = builder.Build();
 
