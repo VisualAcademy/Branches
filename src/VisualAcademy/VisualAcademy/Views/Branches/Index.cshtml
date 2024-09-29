@@ -130,6 +130,7 @@
                 contentType: 'application/json',
                 data: JSON.stringify(branch),
                 success: function () {
+                    $('#createBranchForm')[0].reset();      // 폼 재설정
                     $('#createBranchModal').modal('hide');  // 모달 닫기
                     $('body').removeClass('modal-open');    // 모달이 열렸을 때 body에 추가된 클래스 제거
                     $('.modal-backdrop').remove();          // modal-backdrop 제거
@@ -137,7 +138,6 @@
                 }
             });
         });
-
 
         // Load branch for editing
         $(document).on('click', '.editBranch', function () {
